@@ -17,11 +17,34 @@
         {
             box-shadow: black 20px 10px 50px;
         }
+         button{
+        -webkit-border-radius: 20;
+        -moz-border-radius: 20;
+        border-radius: 20px;
+        text-shadow: 2px 2px 3px #666666;
+        -webkit-box-shadow: 3px 3px 10px #666666;
+        -moz-box-shadow: 3px 3px 10px #666666;
+        box-shadow: 3px 3px 10px #666666;
+        font-family: Arial;
+        color: #050505;
+        font-size: 20px;
+        background: #ffffff;
+        padding: 10px 15px 10px 15px;
+        border: solid #000000 2px;
+        text-decoration: none;
+       }
+       button:hover
+       {
+        background: #000000;
+        text-decoration: none;
+        color: white;
+       }
     </style>
     <title>Snake</title>
 </head>
 <body>
     <h1>SNAKE</h1>
+    <button onClick="window.location.reload();">Restart</button> <br>
     <canvas id="game" width="400" height="400" />
     <script src="index.js"></script>
 </body>
